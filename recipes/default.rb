@@ -3,6 +3,10 @@
 # Recipe:: default
 #
 
+directory "c:\\chef_temp" do
+	action :create
+end
+
 cookbook_file "netfx_dtp.cab" do
 	path "c:\\chef_temp\\netfx_dtp.cab"
 	action :create_if_missing
