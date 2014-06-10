@@ -23,5 +23,5 @@ end
 
 directory "c:\\chef_temp" do
 	action :delete
-	recursive :true
+	recursive true
 end
