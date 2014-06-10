@@ -14,6 +14,6 @@ cookbook_file "netfx_dtp.msi" do
 end
 
 execute "install_it" do
-	command "NetFx_DTP.msi EXTUI=1 /log \"netfx_dtp.txt\""
+	command "c:\\netfx_dtp.msi EXTUI=1 /log \"netfx_dtp.txt\""
 	not_if { ::File.exists?("c:\\netfx_dtp.txt")}
 end
