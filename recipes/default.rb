@@ -5,12 +5,12 @@
 
 cookbook_file "netfx_dtp.cab" do
 	path "c:\\"
-	action :crate_if_missing
+	action :create_if_missing
 end
 
 cookbook_file "netfx_dtp.msi" do
 	path "c:\\"
-	action :crate_if_missing
+	action :create_if_missing
 end
 
 execute "install_it" do
