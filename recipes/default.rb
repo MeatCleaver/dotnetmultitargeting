@@ -4,12 +4,12 @@
 #
 
 cookbook_file "netfx_dtp.cab" do
-	path "c:\\"
+	path "c:\\netfx_dtp.cab"
 	action :create_if_missing
 end
 
 cookbook_file "netfx_dtp.msi" do
-	path "c:\\"
+	path "c:\\netfx_dtp.msi"
 	action :create_if_missing
 end
 
